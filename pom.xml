@@ -12,7 +12,7 @@
 	<artifactId>dndapi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>dndapi</name>
-	<description>Demo project D&D character generation api</description>
+	<description>Demo project DnD character generation api</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -39,6 +39,18 @@
 					<artifactId>junit-vintage-engine</artifactId>
 				</exclusion>
 			</exclusions>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.zaxxer/HikariCP -->
+		<dependency>
+			<groupId>com.zaxxer</groupId>
+			<artifactId>HikariCP</artifactId>
+			<version>3.4.5</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>5.2.8.RELEASE</version>
 		</dependency>
 	</dependencies>
 
