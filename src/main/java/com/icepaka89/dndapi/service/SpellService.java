@@ -20,4 +20,8 @@ public class SpellService {
     public List<Spell> getAllSpells() {
         return spellDao.getAllSpells();
     }
+
+    public List<Spell> getClassSpells(String className) {
+        return spellDao.getClassSpells(className);
+    }
 }

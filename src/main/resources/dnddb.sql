@@ -31,6 +31,7 @@ USE `dnd`;
 CREATE TABLE IF NOT EXISTS `dnd5_classes` (
   `class_id` int(11) NOT NULL AUTO_INCREMENT,
   `class_name` varchar(9) NOT NULL,
+  `hit_die` int(11) NOT NULL,
   PRIMARY KEY (`class_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
 
@@ -38,19 +39,19 @@ CREATE TABLE IF NOT EXISTS `dnd5_classes` (
 -- Dumping data for table `dnd5_classes`
 --
 
-INSERT INTO `dnd5_classes` (`class_id`, `class_name`) VALUES
-(1, 'barbarian'),
-(2, 'bard'),
-(3, 'cleric'),
-(4, 'druid'),
-(5, 'fighter'),
-(6, 'monk'),
-(7, 'paladin'),
-(8, 'ranger'),
-(9, 'rogue'),
-(10, 'sorcerer'),
-(11, 'warlock'),
-(12, 'wizard');
+INSERT INTO `dnd5_classes` (`class_id`, `class_name`, `hit_die`) VALUES
+(1, 'barbarian', 12),
+(2, 'bard', 8),
+(3, 'cleric', 8),
+(4, 'druid', 8),
+(5, 'fighter', 10),
+(6, 'monk', 8),
+(7, 'paladin', 10),
+(8, 'ranger', 10),
+(9, 'rogue', 8),
+(10, 'sorcerer', 6),
+(11, 'warlock', 8),
+(12, 'wizard', 6);
 
 -- --------------------------------------------------------
 

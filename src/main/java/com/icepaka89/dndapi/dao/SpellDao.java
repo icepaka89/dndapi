@@ -19,4 +19,12 @@ public interface SpellDao {
      * @return
      */
     List<Spell> getAllSpells();
+
+    /**
+     * Gets all spells in the database available for the class specified. <i>className</i> corresponds to the
+     * <i>dnd5_classes.class_name</i> value. The comparison is case-insensitive.
+     * @param className
+     * @return
+     */
+    List<Spell> getClassSpells(String className);
 }
